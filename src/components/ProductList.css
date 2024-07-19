@@ -1,0 +1,73 @@
+/* Container for product list with padding and centered content */
+.product-list-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Flex container for view toggle buttons with spacing */
+.view-toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Common styles for both view toggle buttons */
+.view-toggle-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for view toggle buttons */
+.view-toggle-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Active state styling for the selected view toggle button */
+.view-toggle-buttons .active {
+  background-color: #bbb;
+  font-weight: bold;
+}
+
+/* Grid layout for product items with responsive columns */
+.products.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* List layout for product items */
+.products.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Styling for individual product items in list view */
+.products.list .product-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for product items in list view */
+.products.list .product-item:hover {
+  transform: scale(1.01);
+}
+
+/* Ensuring product image in list view has a fixed size and margin */
+.products.list .product-item img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
